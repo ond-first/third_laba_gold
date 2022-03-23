@@ -1,0 +1,152 @@
+object Form1: TForm1
+  Left = 127
+  Height = 473
+  Top = 176
+  Width = 1299
+  Caption = 'Form1'
+  ClientHeight = 473
+  ClientWidth = 1299
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 15
+    Top = 32
+    Width = 107
+    Caption = 'Путь к матрице №1'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 136
+    Height = 23
+    Top = 28
+    Width = 216
+    TabOrder = 0
+    Text = 'in1.txt'
+  end
+  object StringGrid1: TStringGrid
+    Left = 24
+    Height = 204
+    Top = 96
+    Width = 328
+    ColCount = 0
+    FixedCols = 0
+    FixedRows = 0
+    RowCount = 0
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 432
+    Height = 15
+    Top = 32
+    Width = 107
+    Caption = 'Путь к матрице №2'
+    ParentColor = False
+  end
+  object StringGrid2: TStringGrid
+    Left = 432
+    Height = 204
+    Top = 96
+    Width = 328
+    ColCount = 0
+    FixedCols = 0
+    FixedRows = 0
+    RowCount = 0
+    TabOrder = 2
+  end
+  object Edit2: TEdit
+    Left = 544
+    Height = 23
+    Top = 28
+    Width = 216
+    TabOrder = 3
+    Text = 'in2.txt'
+  end
+  object ComboBox1: TComboBox
+    Left = 368
+    Height = 23
+    Top = 176
+    Width = 48
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      '+'
+      '-'
+      '*'
+    )
+    TabOrder = 4
+    Text = '+'
+  end
+  object StringGrid3: TStringGrid
+    Left = 864
+    Height = 204
+    Top = 96
+    Width = 328
+    ColCount = 0
+    FixedCols = 0
+    FixedRows = 0
+    RowCount = 0
+    TabOrder = 5
+  end
+  object Button1: TButton
+    Left = 776
+    Height = 49
+    Top = 160
+    Width = 75
+    Caption = '='
+    Font.Height = -27
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Button2: TButton
+    Left = 24
+    Height = 33
+    Top = 56
+    Width = 328
+    Caption = 'Добавить'
+    OnClick = Button2Click
+    TabOrder = 7
+  end
+  object Button3: TButton
+    Left = 432
+    Height = 33
+    Top = 56
+    Width = 328
+    Caption = 'Добавить'
+    OnClick = Button3Click
+    TabOrder = 8
+  end
+  object Label3: TLabel
+    Left = 1000
+    Height = 15
+    Top = 72
+    Width = 56
+    Caption = 'Результат:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 66
+    Height = 15
+    Top = 344
+    Width = 141
+    Caption = ''' + '' - сумма двух матриц '
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 66
+    Height = 15
+    Top = 368
+    Width = 144
+    Caption = ''' - '' - разница двух матриц'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 66
+    Height = 15
+    Top = 388
+    Width = 176
+    Caption = ''' * '' - произведение двух матриц'
+    ParentColor = False
+  end
+end
